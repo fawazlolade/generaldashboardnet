@@ -1,44 +1,22 @@
 /************Font Face: Poppins ***********/
-@font-face {
-    font-family: PoppinsExtraBold;
-    src: url('/pricingPage/assets/fonts/Poppins/Poppins-ExtraBold.ttf');
-}
+
 @font-face {
     font-family: big;
-    src: url('/fonts/Poppins-Black.ttf');
+    src: url('fonts/Poppins-Black.ttf');
 }
 @font-face {
     font-family: bold;
-    src: url('/fonts/Poppins-Bold.ttf');
+    src: url('fonts/Poppins-Bold.ttf');
 }
 @font-face {
     font-family: logo;
-    src: url('/fonts/RobotoCondensed-Bold.ttf');
+    src: url('fonts/RobotoCondensed-Bold.ttf');
 }
 @font-face {
     font-family: small;
-    src: url('/fonts/Poppins-Regular.ttf');
+    src: url('fonts/Poppins-Regular.ttf');
 }
-@font-face {
-    font-family: PoppinsSemiBold;
-    src: url('/pricingPage/assets/fonts/Poppins/Poppins-SemiBold.ttf');
-  }
-  @font-face {
-    font-family: PoppinsLight;
-    src: url('/pricingPage/assets/fonts/Poppins/Poppins-Light.ttf'); 
-  }
-  @font-face {
-    font-family: PoppinsMedium;
-    src: url('/pricingPage/assets/fonts/Poppins/Poppins-Medium.ttf');
-  }
-  @font-face {
-    font-family: PoppinsRegular;
-    src: url('/pricingPage/assets/fonts/Poppins/Poppins-Regular.ttf'); 
-  }
-  @font-face {
-    font-family: PoppinsThin;
-    src: url('/pricingPage/assets/fonts/Poppins/Poppins-Thin.ttf');
-  }
+
 
 :root {
  
@@ -78,7 +56,7 @@ body{
     min-height: 100vh;
     width:100%;
     position: relative;
-    background-image: url('/images/vt.jpg');
+    background-image: url('images/vt.jpg');
     background-position: center;
     background-size: cover;
 }
@@ -298,7 +276,7 @@ text-decoration: none;
     border-left: 1px solid ivory;
     border-right: 1px solid ivory;
     border-bottom: 1px solid ivory; */
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('/images/15185976_5581901.jpg');
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('images/15185976_5581901.jpg');
     background-size: cover;
 }
 .one p{
@@ -310,7 +288,7 @@ text-decoration: none;
     border-left: 1px solid ivory;
     border-right: 1px solid ivory;
     border-bottom: 1px solid ivory; */
-    background-image: url('/images/3d-render-technology-background-with-network-communications-structure-design.jpg');
+    background-image: url('images/3d-render-technology-background-with-network-communications-structure-design.jpg');
             background-size: cover;
 }
 
@@ -319,19 +297,19 @@ text-decoration: none;
     border-left: 1px solid ivory;
     border-right: 1px solid ivory;
     border-bottom: 1px solid ivory; */
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('/images/15694137_5619852.jpg');
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('images/15694137_5619852.jpg');
     background-size: cover;
 }
 .four{
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('/images/15517705_5630949.jpg');
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('images/15517705_5630949.jpg');
     background-size: cover;
 }
 .five{
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('/images/recovert.jpg');
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('images/recovert.jpg');
     background-size: cover;
 }
 .six{
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('/images/15185976_5581901.jpg');
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('images/15185976_5581901.jpg');
     background-size: cover;
 }
 .top{
