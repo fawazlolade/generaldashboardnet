@@ -1,0 +1,362 @@
+/************Font Face: Poppins ***********/
+@font-face {
+    font-family: PoppinsExtraBold;
+    src: url('/pricingPage/assets/fonts/Poppins/Poppins-ExtraBold.ttf');
+}
+@font-face {
+    font-family: big;
+    src: url('/fonts/Poppins-Black.ttf');
+}
+@font-face {
+    font-family: bold;
+    src: url('/fonts/Poppins-Bold.ttf');
+}
+@font-face {
+    font-family: logo;
+    src: url('/fonts/RobotoCondensed-Bold.ttf');
+}
+@font-face {
+    font-family: small;
+    src: url('/fonts/Poppins-Regular.ttf');
+}
+@font-face {
+    font-family: PoppinsSemiBold;
+    src: url('/pricingPage/assets/fonts/Poppins/Poppins-SemiBold.ttf');
+  }
+  @font-face {
+    font-family: PoppinsLight;
+    src: url('/pricingPage/assets/fonts/Poppins/Poppins-Light.ttf'); 
+  }
+  @font-face {
+    font-family: PoppinsMedium;
+    src: url('/pricingPage/assets/fonts/Poppins/Poppins-Medium.ttf');
+  }
+  @font-face {
+    font-family: PoppinsRegular;
+    src: url('/pricingPage/assets/fonts/Poppins/Poppins-Regular.ttf'); 
+  }
+  @font-face {
+    font-family: PoppinsThin;
+    src: url('/pricingPage/assets/fonts/Poppins/Poppins-Thin.ttf');
+  }
+
+:root {
+ 
+    /**=====Font size====**/
+    --p-font: 13px;
+    --title-font: 32px;
+
+    /**====Icon sizes====**/
+
+    --icon-width: 60px;
+    --icon-height: 30px;
+    
+    /**====Font Family====**/
+    --extrabold-font: PoppinsExtraBold;
+    --semi-bold: PoppinsSemiBold;
+    --reg-font: PoppinsRegular;
+    --med-font: PoppinsMedium;
+    --thin-font: PoppinsThin;
+    --light-font: PoppinsLight; 
+
+
+    /*margin*/
+    --mg-tp: 1.0rem;
+
+
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+.site-header{
+    min-height: 100vh;
+    width:100%;
+    position: relative;
+    background-image: url('/images/vt.jpg');
+    background-position: center;
+    background-size: cover;
+}
+/***********NAVBAR**********/
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links{
+    flex:1;
+    overflow-x: hidden;
+    text-align: right;
+}
+.nav-links ul li{
+    display: inline-block;
+    padding: 8px 20px;
+    list-style-type: none;
+
+}
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+.nav-links ul li a::after{
+    content: '';
+    width: 0%;
+    background-color: crimson;
+    height:2px;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+}
+.nav-links ul li a:hover:after{
+    content: '';
+    width: 100%;
+    background-color: crimson;
+    height:2px;
+    display: block;
+    margin: auto;
+}
+#logo {
+    display: flex;
+    font-size: 16px;
+    font-family: logo;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+.fa-graduation-cap{
+color:rgb(211, 79, 105);
+}
+
+.text-box{
+width:90%;
+color: white;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+}
+.text-box h1{
+    font-family: big;
+font-size: 62px;
+}
+.text-box p{
+margin: 10px 0 40px;
+font-size: 0.875rem;
+font-family: small;
+color:#fff;
+}
+.text-box a{
+display: inline-block;
+text-decoration: none;
+color: white;
+border-radius: 5px;
+border: 1px solid purple;
+padding: 12px 34px;
+font-size: 13px;
+font-family: small;
+background: purple;
+}
+.text-box a:hover{
+background-color: crimson;
+border: 1px solid crimson;
+}
+
+#cancel{
+display: none;
+}
+@media (min-width:800px) {
+.nav-bars-responsive, #menu {
+    display: none;
+}
+}
+@media (max-width: 800px) {
+.text-box h1{
+    font-size: 25px;
+}
+.nav-bars-responsive #cancel, #menu{display: block; font-size: 22px; color:#fff; cursor: pointer; margin: 30px;}
+footer{position: absolute; bottom: -220%; font-size: 0.875rem; color: #333; text-align: center;} footer span{color: 0.700rem; color: #333;} 
+.nav-links {
+    display: none;
+}
+/***RESPONSIVE NAVBAR****/
+.nav-bars-responsive{
+position: absolute;
+width: 200px;
+height:100vh;
+background:crimson;
+top:0;
+right:0;
+display: none;
+z-index: 2;
+text-align: left;
+}     
+.nav-bars-responsive ul{
+padding: 30px;
+}
+.nav-bars-responsive ul li{
+list-style-type: none;
+
+}
+.nav-bars-responsive li a{
+color: white;
+font-size: 14px;
+padding: 7px 10px;
+display: block;
+margin: 10px;
+text-decoration: none;
+}
+
+}
+.icons{
+    width: var(--icon-width);
+    height: var(--icon-height);
+}
+
+.pricing-container{
+    width: 100%;
+    height: 100vh;
+    padding-top: 40px;    
+}
+
+.title_text{
+    color: hsl(203, 100%, 50%);
+    font-size: var(--title-font);
+    font-family: logo;
+    text-align: center;
+
+}
+
+
+.paragraph-1_text{
+    color: white;
+    font-family: small;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.service_container{
+    width: 100%;
+    height: 100vh;
+    padding: 80px 8%;
+    
+}
+
+.row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+}
+.service{
+    padding: 25px 10px;
+    height: 300px;
+    background: transparent;
+    text-align: center;
+    box-shadow: 3px 3px 3px 3px black;
+}
+
+.service:hover{
+    transform: scale(1.05);
+
+}
+.service h1{
+    color: white;
+    font-family: logo;
+    margin: 0.5rem 0;
+}
+.service p{
+    color: white;
+    font-family: small;
+    margin: 1.5rem 0;
+}
+.service a{
+    background-color: #333;
+    border-radius: 10px;
+    font-family: small;
+    font-size: 0.800rem;
+    color: white;
+    text-decoration: none;
+    padding: 12px 16px;
+}
+
+.one{
+    /* border-top: 8px solid hsl(357, 100%, 50%);
+    border-left: 1px solid ivory;
+    border-right: 1px solid ivory;
+    border-bottom: 1px solid ivory; */
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('/images/15185976_5581901.jpg');
+    background-size: cover;
+}
+.one p{
+    color: white;
+}
+
+.two{
+    /* border-top: 8px solid hsl(198, 100%, 50%);
+    border-left: 1px solid ivory;
+    border-right: 1px solid ivory;
+    border-bottom: 1px solid ivory; */
+    background-image: url('/images/3d-render-technology-background-with-network-communications-structure-design.jpg');
+            background-size: cover;
+}
+
+.three{
+    /* border-top: 8px solid  hsl(234, 21%, 43%);
+    border-left: 1px solid ivory;
+    border-right: 1px solid ivory;
+    border-bottom: 1px solid ivory; */
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('/images/15694137_5619852.jpg');
+    background-size: cover;
+}
+.four{
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('/images/15517705_5630949.jpg');
+    background-size: cover;
+}
+.five{
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('/images/recovert.jpg');
+    background-size: cover;
+}
+.six{
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('/images/15185976_5581901.jpg');
+    background-size: cover;
+}
+.top{
+    position: relative; 
+    margin: 20px 0;
+}
+
+.top p{
+    color: white;
+    font-size: 13px;
+    font-family: small;
+}
+
+
+footer{
+    text-align: center;
+    padding-top: 10px;
+    background-color: #000;
+    display: block;
+    margin-bottom: 2%;
+}
+footer span{
+    color: #777;
+    display: block;
+    font-family: small;
+    text-align: center;
+    padding: 10px;
+}
