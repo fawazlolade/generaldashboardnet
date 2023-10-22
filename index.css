@@ -166,7 +166,7 @@ display: none;
     font-size: 25px;
 }
 .nav-bars-responsive #cancel, #menu{display: block; font-size: 22px; color:#fff; cursor: pointer; margin: 30px;}
-footer{position: absolute; bottom: -320%; font-size: 0.878rem; color: #333; text-align: center;} footer span{color: 0.700rem; color: #333;} 
+footer{position: absolute; bottom: -300%; font-size: 0.875rem; color: #333; text-align: center;} footer span{color: 0.700rem; color: #333;} 
 .nav-links {
     display: none;
 }
